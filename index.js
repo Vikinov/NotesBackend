@@ -50,6 +50,8 @@ app.use(cors());
 
 app.use(requestLogger);
 
+app.use(express.static('build'));
+
 app.get('/', (req, res) => {
     res.send('<h1>hello world</h1>')
 })
